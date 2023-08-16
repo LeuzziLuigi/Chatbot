@@ -3,7 +3,8 @@ import React from 'react';
 import MonacoCode from './MonacoCode';
 
 export default function MessageContent({ content }: { content: string }) {
-  const codeRegex = /```(.*?)(?:\n([\s\S]*?)(?:```|$))/g;
+  //const codeRegex = /```(.*?)(?:\n([\s\S]*?)(?:```|$))/g;
+  const codeRegex = /```(.*?)\n([\s\S]*?)```/g;
 
   const parseContent = () => {
     let match;

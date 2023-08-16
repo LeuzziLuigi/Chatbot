@@ -8,8 +8,8 @@ export default function ChatComponent() {
     // useChat -> handles messages for us, user input, handling user submits, etc.
     const { input, handleInputChange, handleSubmit, isLoading, messages } = useChat();
 
-    console.log(messages);
-    console.log(input);
+    //console.log(messages);
+    //console.log(input);
 
     return (
         <div>
